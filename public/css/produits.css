@@ -92,12 +92,11 @@
 }
 
 .product-card p{
-    border: 1px blue solid;
     width: 100%;
     color: #85A900;
     text-align: center;
     flex-wrap: wrap;
-    height: 120px;
+   
 }
 
 .product-card img {
@@ -148,7 +147,7 @@
     position: relative;
     top: -13px;
     right: 8px;
-    background-color: var(--text-color);
+    background-color: red;
     font-size: 13px;
     padding: 1px 7px;
     border-radius: 10px;

@@ -37,8 +37,8 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="/panier.html">Panier</a>
-            <span class="indice">3</span>
+          <li><a href="/ecoservices/public/panier">Panier</a>
+            <span class="indice">0</span>
         </li>
         </ul>
   
@@ -87,13 +87,13 @@
                             ?>
                      <div class="product-card">
                     <img src="img/<?php echo $row["image_path"];?>" alt="">'
-                    <h3><?php echo $row["name"];?></h3>;
+                    <h3><?php echo $row["name"];?></h3>
                     <h4>En stock <?php echo $row["stock"];?></h4>
                     <h4><?php echo $row["price"];?></h4>
                     <label for="quantity">Quantité:</label>
                     <input type="number" id="quantity" name="quantity" min="1" value="1">
                     <p><?php echo $row["description"];?></p>
-                    <button type="#">Add to cart</button>
+                    <button type="#" id="cart"  data-id="<?php echo $row['id']; ?>" data-name="<?php echo $row['name']; ?>" data-image="<?php echo $row['image_path']; ?>" data-price="<?php echo $row['price']; ?>">Add to cart</button>
                 </div>
                 <?php
                         }
@@ -127,13 +127,13 @@
                                  ?>
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
-                         <h3><?php echo $row["name"];?></h3>;
+                         <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
-                         <button type="#">Add to cart</button>
+                         <button type="#" id="cart" data-id="<?php echo $row['id']; ?>" data-name="<?php echo $row['name']; ?>" data-image="<?php echo $row['image_path']; ?>" data-price="<?php echo $row['price']; ?>">Add to cart</button>
                      </div>
                      <?php
                              }
@@ -168,13 +168,13 @@
                                  ?>
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
-                         <h3><?php echo $row["name"];?></h3>;
+                         <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
-                         <button type="#">Add to cart</button>
+                         <button type="#" id="cart" data-id="<?php echo $row['id']; ?>" data-name="<?php echo $row['name']; ?>" data-image="<?php echo $row['image_path']; ?>" data-price="<?php echo $row['price']; ?>">Add to cart</button>
                      </div>
                      <?php
                              }
@@ -209,13 +209,13 @@
                                  ?>
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
-                         <h3><?php echo $row["name"];?></h3>;
+                         <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
-                         <button type="#">Add to cart</button>
+                         <button type="#" id="cart"data-id="<?php echo $row['id']; ?>" data-name="<?php echo $row['name']; ?>" data-image="<?php echo $row['image_path']; ?>" data-price="<?php echo $row['price']; ?>">Add to cart</button>
                      </div>
                      <?php
                              }
@@ -250,13 +250,13 @@
                                  ?>
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
-                         <h3><?php echo $row["name"];?></h3>;
+                         <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
-                         <button type="#">Add to cart</button>
+                         <button type="#" id="cart"data-id="<?php echo $row['id']; ?>" data-name="<?php echo $row['name']; ?>" data-image="<?php echo $row['image_path']; ?>" data-price="<?php echo $row['price']; ?>">Add to cart</button>
                      </div>
                      <?php
                              }
@@ -286,6 +286,6 @@
 
      
 
-      <script src="js/script.js"></script>
+     <script src="/ecoservices/public/js/script.js"></script>
 </body>
 </html>

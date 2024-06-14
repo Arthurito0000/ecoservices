@@ -67,12 +67,14 @@
    position: absolute;
    z-index: 8;
    width: 100%;
-   height: 50vh;
+   height: 60vh;
    top:-600px;
    left: 0;
    background-color: var(--bg-color);
    border-top: 1px solid rgba(145,177,25,0.6);
    transition: all 0.5s ease-in-out;
+   padding-top: 40px;
+   
  }
 
  .hamburger{

@@ -13,9 +13,9 @@
     <section class="panier">
 
        <div class="fermer"> 
-        <img src="/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+       <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
         
-        <button class="close"><a href="/produits.html">Fermer</a></button>
+        <button class="close"><a href="/ecoservices/public/list_product">Fermer</a></button>
         
     </div>
 
