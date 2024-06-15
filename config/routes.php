@@ -19,6 +19,8 @@ $routes = [
     '/ecoservices/public/admin_demande' => '../app/views/admin_demande.php',
     '/ecoservices/public/submitdemande' => '../app/controllers/demandeController.php',
     '/ecoservices/public/updateproduit' => '../app/controllers/productController.php', 
+    '/ecoservices/public/updateproduit' => '../app/controllers/productController.php', 
+    '/ecoservices/public/checkout' => '../public/checkout.php', 
 ];
 
 return $routes;

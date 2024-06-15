@@ -33,13 +33,12 @@
         </div>
         <ul class="navbar">
           <li><a href="home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="home#services">Services</a></li>
           <li><a href="/ecoservices/public/panier">Panier</a>
-            <span class="indice">0</span>
+          <span class="indice">0</span>
         </li>
+          <li><a href="connexion">connexion</a></li>
+           
         </ul>
   
         <div class="hamburger">
@@ -89,7 +88,7 @@
                     <img src="img/<?php echo $row["image_path"];?>" alt="">'
                     <h3><?php echo $row["name"];?></h3>
                     <h4>En stock <?php echo $row["stock"];?></h4>
-                    <h4><?php echo $row["price"];?></h4>
+                    <h4><?php echo $row["price"];?><span>$</span></h4>
                     <label for="quantity">Quantité:</label>
                     <input type="number" id="quantity" name="quantity" min="1" value="1">
                     <p><?php echo $row["description"];?></p>
@@ -129,7 +128,7 @@
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
-                         <h4><?php echo $row["price"];?></h4>
+                         <h4><?php echo $row["price"];?><span>$</span></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
@@ -169,7 +168,7 @@
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
@@ -210,7 +209,7 @@
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
@@ -251,7 +250,7 @@
                           <div class="product-card">
                          <img src="img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
                          <h4><?php echo $row["price"];?></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
@@ -287,5 +286,6 @@
      
 
      <script src="/ecoservices/public/js/script.js"></script>
+     <script src="/ecoservices/public/js/panier.js"></script>
 </body>
 </html>

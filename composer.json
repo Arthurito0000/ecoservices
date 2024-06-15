@@ -1,0 +1,19 @@
+{
+    "name": "kqbrel/ecoservices",
+    "description": "ce projet presente l'entreprise eco-service, ses services et les produits qu'elle  vendent",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kqbrel\\Ecoservices\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthurito0000",
+            "email": "arthurotamboula10@gmai.com"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^14.10"
+    }
+}

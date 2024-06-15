@@ -11,7 +11,7 @@ $productId = isset($_GET['id']) ? $_GET['id'] : null;
 if ($productId) {
     $product = $productModel->getProductById($productId);
 } else {
-    echo "ID du produit manquant.";
+    echo "ID du produit manqut.";
     exit;
 }
 ?>

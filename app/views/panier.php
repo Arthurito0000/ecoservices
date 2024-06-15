@@ -11,56 +11,103 @@
 <body>
 
     <section class="panier">
-
-       <div class="fermer"> 
-       <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
-        
-        <button class="close"><a href="/ecoservices/public/list_product">Fermer</a></button>
-        
-    </div>
-
-        <div class="container">
-
-            <div class="head">
-            
-                <h1>Vos Articles</h1>
-                <h1>prix Total: <span>500$</span></h1>
-        
-            </div>
-                <div class="card">
-                    <img src="img/savon.jpg" alt="">
-                    <div class="content">
-                        <h3>Détergent Naturel</h3>
-                        <h3>prix: <span>10$</span></h3>
-                        <label for="quantity">Quantité:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
-                        
-                    </div>
-                    <div class="annuler">
-                        <button class="sup">X</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="img/vinaigre.jpg" alt="">
-                    <div class="content">
-                        <h3>vinaigre blanc</h3>
-                        <h3>prix: <span>15$</span></h3>
-                        <label for="quantity">Quantité:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
-                        
-                    </div>
-                    <div class="annuler">
-                        <button class="sup">X</button>
-                    </div>
-                </div>
-
-                <div class="bt"><a href="#" class="btn">Payer par stripe</a></div>
+        <div class="fermer"> 
+            <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+            <button class="close"><a href="/ecoservices/public/list_product">Fermer</a></button>
         </div>
-
+        <div class="container">
+            <div class="head">
+                <h1>Vos Articles</h1>
+                <h1>Prix Total: <span id="totalPrice">0$</span></h1>
+            </div>
+            <div id="cartItems"></div>
+            <div class="bt"><a href="checkout" class="btn">Payer par Stripe</a></div>
+        </div>
     </section>
-    
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            const totalPriceElement = document.getElementById('totalPrice');
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let totalPrice = 0;
+
+            cart.forEach(item => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                
+                const img = document.createElement('img');
+                img.src = 'img/' + item.image;
+                img.alt = item.name;
+                card.appendChild(img);
+
+                const content = document.createElement('div');
+                content.classList.add('content');
+
+                const itemName = document.createElement('h3');
+                itemName.textContent = item.name;
+                content.appendChild(itemName);
+
+                const itemPrice = document.createElement('h3');
+                itemPrice.innerHTML = `Prix: <span>${item.price}$</span>`;
+                content.appendChild(itemPrice);
+
+                const quantityLabel = document.createElement('label');
+                quantityLabel.setAttribute('for', 'quantity');
+                quantityLabel.textContent = 'Quantité:';
+                content.appendChild(quantityLabel);
+
+                const quantityInput = document.createElement('input');
+                quantityInput.setAttribute('type', 'number');
+                quantityInput.setAttribute('name', 'quantity');
+                quantityInput.setAttribute('min', '1');
+                quantityInput.value = item.quantity;
+                quantityInput.addEventListener('change', function() {
+                    updateQuantity(item.id, parseInt(quantityInput.value));
+                });
+                content.appendChild(quantityInput);
+
+                card.appendChild(content);
+
+                const annuler = document.createElement('div');
+                annuler.classList.add('annuler');
+
+                const supButton = document.createElement('button');
+                supButton.classList.add('sup');
+                supButton.textContent = 'X';
+                supButton.addEventListener('click', function() {
+                    removeFromCart(item.id);
+                });
+                annuler.appendChild(supButton);
+
+                card.appendChild(annuler);
+
+                cartItemsContainer.appendChild(card);
+
+                totalPrice += item.price * item.quantity;
+            });
+
+            totalPriceElement.textContent = totalPrice + '$';
+        });
+
+        function updateQuantity(productId, newQuantity) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let product = cart.find(item => item.id === productId);
+
+            if (product) {
+                product.quantity = newQuantity;
+                localStorage.setItem('cart', JSON.stringify(cart));
+                location.reload();
+            }
+        }
+
+        function removeFromCart(productId) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.id !== productId);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            location.reload();
+        }
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>
 </body>
 </html>
-
