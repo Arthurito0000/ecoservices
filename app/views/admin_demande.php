@@ -10,17 +10,22 @@
     <link rel="stylesheet" type="text/css" href="/ecoservices/public/css/fontawesome-free-6.5.1-web/css/all.css" />
     <link rel="stylesheet" type="text/css" href="/ecoservices/public/css/media_produit.css" />
 
-       
+       <style>
+        td a{
+            color:#85A900;
+        }
+       </style>
 </head>
 <body>
 
 <div class="header-container">
       <div class="logo">
-        <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+        <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
       </div>
       <ul class="navbar">
+      <li><a href="home">Home</a></li>
         <li><a href="admin_produit">gerer les produits</a></li>
-        <li><a href="#">deconnexion</a></li>
+        <li><a href="connexion">deconnexion</a></li>
       </ul>
 
       <div class="hamburger">
@@ -31,14 +36,14 @@
 
     </div>
     <ul class="navbars">
-    
-        <li><a href="#">gerer les produits</a></li>
+    <li><a href="home">Home</a></li>
+        <li><a href="#">gerer les demandes</a></li>
         <li><a href="#">deconnexion</a></li>
       
     </ul>
 
 <div class="containers">
-    <h1 class="text">Gestion des produits</h1>
+    <h1 class="text">Gestion les demandes</h1>
     
     <?php
     // Connexion à la base de données
@@ -63,13 +68,13 @@
        
         echo "<div class='bloc' >";
         echo "<table class='table'>";
-        echo "<thead class='thead'><tr ><th>entreprise</th><th>service</th><th>date demande</th><th>Action</th></tr></thead><tbody>";
+        echo "<thead class='thead'><tr ><th>entreprise</th><th>service</th><th>statut</th><th>date demande</th><th>Action</th></tr></thead><tbody>";
        
         if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>".$row["entreprise"]."</td><td>".$row["service"]."</td><td>".$row["date_demande"]."</td>";
+            echo "<tr><td>".$row["entreprise"]."</td><td>".$row["service"]."</td><td>".$row["etat"]. "</td><td>".$row["date_demande"]."</td>";
             echo "<td><i class='fa-solid fa-trash delete-icon' style='color:red; cursor:pointer;' data-id='".$row["id"]."'></i>";
-            echo "<i class='fa-solid fa-pencil update-icon' style='color:#85A900; cursor:pointer;' data-id='".$row["id"]."'></i></td>";
+            echo "<a href='/ecoservices/app/views/demandeUpdate.php?id=" . $row['id'] . "'><i class='fa-solid fa-pencil'></i> Modifier</a></td>";
             echo"</tr>";
         }
         echo "</tbody></table>";

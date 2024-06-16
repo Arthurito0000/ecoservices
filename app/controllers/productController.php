@@ -89,7 +89,7 @@ class ProductController {
         }
     }
 
-    private function validateData($description, $name, $price, $stock, $category, $statut, $file_new) {
+    private function validateData($description, $name, $price, $stock, $category, $statut, $file_new) { //
         return !empty($description) && !empty($name) && !empty($price) && !empty($stock) && !empty($category) && !empty($statut) && !empty($file_new);
     }
 }

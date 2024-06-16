@@ -11,6 +11,14 @@
         color:red;
         background-color:rgba(55,0,0,0.2);
       }
+      .mes{
+        height:50px;
+        background-color:#250821;
+        width:100%;
+        border-radius:10px;
+        color:white;
+        text-align:center;
+      }
     </style>
 </head>
 <body>
@@ -20,6 +28,10 @@
         <div class="connexion-contain">
             <div class="logo">
                 <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+              </div>
+
+              <div class="mes">
+                les demandes de devis sont reservees uniquement pour les comptes professionnels
               </div>
     
             <div class="contact-head">
@@ -33,7 +45,7 @@
        
             <div class="form">
             
-             <form action="/ecoservices/config/admin_login_process.php" method="POST">
+             <form action="/ecoservices/config/professionnel_login_process.php" method="POST">
             
                <div><input type="text" name="username" id="Email" placeholder="username"></div>
                <div><input type="password" name="password" id="password" placeholder="Mot de passe"></div>

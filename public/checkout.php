@@ -1,5 +1,7 @@
+
+
 <?php
-require '../config/stripe.php';
+require_once '../config/stripe.php';
 
 // Here you should get the total amount from the cart
 $totalAmount = 5000; // Amount in cents ($50.00)
@@ -18,8 +20,8 @@ $session = \Stripe\Checkout\Session::create([
         'quantity' => 1,
     ]],
     'mode' => 'payment',
-    'success_url' => 'https://your-domain.com/success.php',
-    'cancel_url' => 'https://your-domain.com/cancel.php',
+   'success_url' => 'http://localhost/ecoservices/app/views/success.php',
+    'cancel_url' => 'http://localhost/ecoservices/app/views/cancel.php',
 ]);
 
 header('Location: ' . $session->url);

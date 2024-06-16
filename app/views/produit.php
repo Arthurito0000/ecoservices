@@ -42,9 +42,9 @@
         <option value=" "></option>
         <option value="Produits pour la Maison">Produits pour la Maison</option>
         <option value="Produits pour le Quotidien">Produits pour le Quotidien</option>
-        <option value="Produits pour les Bébés et Enfants">Produits pour les Bébés et Enfants</option>
+        <option value="Produits pour les Bébés et Enfants">Produits pour les Bebes et Enfants</option>
         <option value="Produits pour les Animaux">Produits pour les Animaux</option>
-        <option value="Emballages Réutilisables">Emballages Réutilisables</option>
+        <option value="Emballages Réutilisables">Emballages Reutilisables</option>
     </select>
 
     <label for="etat">Etat:</label>

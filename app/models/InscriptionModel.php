@@ -8,7 +8,7 @@ class InscriptionModel {
     private $table_name = 'inscription';
 
     public function __construct($db) {
-        $this->conn = $db->conn;
+        $this->conn = $db->getConnection();
     }
 
     public function getAllData() {

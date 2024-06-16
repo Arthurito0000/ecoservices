@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="/ecoservices/public/css/inscription.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
 
         <div class="connexion-contain">
             <div class="logo">
-                <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+                <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
               </div>
     
             <div class="contact-head">
@@ -24,7 +24,7 @@
             <div class="form">
        
              <form action="/ecoservices/public/submitinscription" method="post">
-               <div><input type="text" name="name" id="username" placeholder="Nom d'utilisateur" required></div>
+               <div><input type="text" name="name" id="username" placeholder="username" required></div>
                <div><input type="email" name="email" id="Email" placeholder="email"></div>
                <div><input type="password" name="password" id="password" placeholder="Mot de passe"></div>
              

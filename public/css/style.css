@@ -38,6 +38,10 @@
      justify-content: space-between;
      align-items: center;
      padding: 9px 10%;
+     position: sticky;
+     z-index: 100;
+     margin: 0;
+     top: 0;
 }
 
 .logo img{
@@ -764,4 +768,35 @@ td{
     align-items: center;
     padding:20px 2%;
 }
+}
+
+.mot-change{
+    text-shadow:0 0 10px rgba(145,177,25,0.6),
+    0 0 10px rgba(145,177,25,0.6),
+    0 0 10px rgba(145,177,25,0.6) ;
+    margin-left: 10px;
+}
+
+.tiret{
+    margin-left: 5px;
+    width: 7px;
+    background-color: white;
+    height: 30px;
+    display: inline-block;
+    animation: bink 1s infinite;
+}
+
+@keyframes bink {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+.home-content h2{
+   display: flex;
+   align-items: center;
+   justify-content: start;
 }

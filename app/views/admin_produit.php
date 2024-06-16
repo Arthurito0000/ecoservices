@@ -16,12 +16,13 @@
 
 <div class="header-container">
       <div class="logo">
-        <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+        <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
       </div>
       <ul class="navbar">
+      <li><a href="home">Home</a></li>
       <li><a href="product">Ajouter un produit</a></li>
         <li><a href="admin_demande">gerer les demandes</a></li>
-        <li><a href="#">deconnexion</a></li>
+        <li><a href="connexion">deconnexion</a></li>
       </ul>
 
       <div class="hamburger">
@@ -32,9 +33,10 @@
 
     </div>
     <ul class="navbars">
+    <li><a href="home">Home</a></li>
         <li><a href="product">Ajouter un produit</a></li>
-        <li><a href="#">gerer les demandes</a></li>
-        <li><a href="#">deconnexion</a></li>
+        <li><a href="admin_demande">gerer les demandes</a></li>
+        <li><a href="connexion">deconnexion</a></li>
       
     </ul>
 
@@ -69,7 +71,7 @@
         if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo "<tr class='bas'><td>".$row["name"]."</td><td>".$row["price"]."</td><td>".$row["stock"]."</td><td>".$row["category"]."</td><td>".$row["etat"]."</td>";
-            echo "<td><a href='../app/views/produitUpdate.php?id=" . $row['id'] . "'><i class='fa-solid fa-pencil'></i> Modifier</a></td>";
+            echo "<td><a href='/ecoservices/app/views/produitUpdate.php?id=" . $row['id'] . "'><i class='fa-solid fa-pencil'></i> Modifier</a></td>";
 
             echo"</tr>";
         }

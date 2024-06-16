@@ -29,7 +29,7 @@
 
     <div class="header-container">
         <div class="logo">
-          <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+          <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
         </div>
         <ul class="navbar">
           <li><a href="home">Home</a></li>
@@ -85,7 +85,7 @@
 
                             ?>
                      <div class="product-card">
-                    <img src="img/<?php echo $row["image_path"];?>" alt="">'
+                    <img src="/ecoservices/public/img/<?php echo $row["image_path"];?>" alt="">'
                     <h3><?php echo $row["name"];?></h3>
                     <h4>En stock <?php echo $row["stock"];?></h4>
                     <h4><?php echo $row["price"];?><span>$</span></h4>
@@ -125,7 +125,7 @@
      
                                  ?>
                           <div class="product-card">
-                         <img src="img/<?php echo $row["image_path"];?>" alt="">'
+                         <img src="/ecoservices/public/img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
                          <h4>En stock <?php echo $row["stock"];?></h4>
                          <h4><?php echo $row["price"];?><span>$</span></h4>
@@ -158,7 +158,7 @@
                 <h2>Produits pour les Bébés et Enfants</h2>
                      <div class="product-grid">
                     <?php
-                           $sql = "SELECT * FROM produit where category='Produits pour les Bébés et Enfants' and etat='disponible'";
+                           $sql = "SELECT * FROM produit where category='Produits pour les Bebes et Enfants' and etat='disponible'";
                            $result = $conn->query($sql);
      
                            if ($result->num_rows > 0) {
@@ -166,10 +166,10 @@
      
                                  ?>
                           <div class="product-card">
-                         <img src="img/<?php echo $row["image_path"];?>" alt="">'
+                         <img src="/ecoservices/public/img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
-                         <h4><?php echo $row["price"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4><?php echo $row["price"];?><span>$</span></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
@@ -207,10 +207,10 @@
      
                                  ?>
                           <div class="product-card">
-                         <img src="img/<?php echo $row["image_path"];?>" alt="">'
+                         <img src="/ecoservices/public/img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
-                         <h4><?php echo $row["price"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4><?php echo $row["price"];?><span>$</span></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>
@@ -240,7 +240,7 @@
                 <h2>Emballages Réutilisables</h2>
                      <div class="product-grid">
                     <?php
-                           $sql = "SELECT * FROM produit where category='Emballages Réutilisables' and etat='disponible'";
+                           $sql = "SELECT * FROM produit where category='Emballages Reutilisables' and etat='disponible'";
                            $result = $conn->query($sql);
      
                            if ($result->num_rows > 0) {
@@ -248,10 +248,10 @@
      
                                  ?>
                           <div class="product-card">
-                         <img src="img/<?php echo $row["image_path"];?>" alt="">'
+                         <img src="/ecoservices/public/img/<?php echo $row["image_path"];?>" alt="">'
                          <h3><?php echo $row["name"];?></h3>
-                         <h4>En stock <?php echo $row["stock"];?><span>$</span></h4>
-                         <h4><?php echo $row["price"];?></h4>
+                         <h4>En stock <?php echo $row["stock"];?></h4>
+                         <h4><?php echo $row["price"];?><span>$</span></h4>
                          <label for="quantity">Quantité:</label>
                          <input type="number" id="quantity" name="quantity" min="1" value="1">
                          <p><?php echo $row["description"];?></p>

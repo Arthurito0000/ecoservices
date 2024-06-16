@@ -6,8 +6,10 @@ $routes=[];
 
 //definir les routes
 $routes = [
+    '/ecoservices/public/' => '../app/views/home.php',
     '/ecoservices/public/home' => '../app/views/home.php',
     '/ecoservices/public/connexion' => '../app/views/connexion.php',
+    '/ecoservices/public/livraison' => '../app/views/livraison.php',
     '/ecoservices/public/demande' => '../app/views/demande.php',
     '/ecoservices/public/inscription' => '../app/views/inscription.php',
     '/ecoservices/public/panier' => '../app/views/panier.php',
@@ -19,7 +21,7 @@ $routes = [
     '/ecoservices/public/admin_demande' => '../app/views/admin_demande.php',
     '/ecoservices/public/submitdemande' => '../app/controllers/demandeController.php',
     '/ecoservices/public/updateproduit' => '../app/controllers/productController.php', 
-    '/ecoservices/public/updateproduit' => '../app/controllers/productController.php', 
+    '/ecoservices/public/updatedemande' => '../app/controllers/demandeController.php', 
     '/ecoservices/public/checkout' => '../public/checkout.php', 
 ];
 

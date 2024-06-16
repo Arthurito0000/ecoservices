@@ -12,7 +12,7 @@
   <body>
     <div class="header-container">
       <div class="logo">
-        <img src="img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
+        <img src="/ecoservices/public/img/c10cf886b8414973bbc0df4ba5ee1e19.png" alt="">
       </div>
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
@@ -20,7 +20,7 @@
         <li><a href="#zero-dechet">Illustration</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">contact</a></li>
-        <li><a href="#">connexion</a></li>
+        <li><a href="connexion">connexion</a></li>
       </ul>
 
       <div class="hamburger">
@@ -30,12 +30,12 @@
       </div>
     </div>
     <ul class="navbars">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#contact">contact</a></li>
+    <li><a href="#home">Home</a></li>
+        <li><a href="#about">Zero-dechet</a></li>
+        <li><a href="#zero-dechet">Illustration</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="connexion">connexion</a></li>
     </ul>
 
     <!-- home section----------------------------------------------------------------------------------------- -->
@@ -43,7 +43,7 @@
     <section id="home" class="home">
       <div class="home-content">
         <h1>Bienvenue chez Eco-services</h1>
-        <h2>Notre Mission <span>web developper</span></h2>
+        <h2>Notre Mission <span class="mot-change"></span><span class="tiret"></span></h2>
 
         <p>
         Eco-service est une entreprise specialisee dans le recyclage des appareils electroniques et electroniques
@@ -75,7 +75,7 @@
 
       <div class="home-image">
         <div class="img-box">
-          <img src="img/PngItem_2328386.png" class="img2" alt="" />
+          <img src="/ecoservices/public/img/PngItem_2328386.png" class="img2" alt="" />
         </div>
       </div>
     </section>
@@ -85,7 +85,7 @@
     <section id="about" class="about">
       <div class="img-about">
         <div class="box-img-about">
-          <img src="img/zero.png" class="about-img1" alt="" />
+          <img src="/ecoservices/public/img/zero.png" class="about-img1" alt="" />
         </div>
       </div>
 
@@ -113,27 +113,27 @@
         
         <div class="images">
             <figure>
-                <img src="img/produits.jpg" alt="Produits zéro déchet">
+                <img src="/ecoservices/public/img/produits.jpg" alt="Produits zéro déchet">
                 <figcaption>Produits réutilisables et écologiques</figcaption>
             </figure>
             <figure>
-                <img src="img/compostage.jpg" alt="Compostage">
+                <img src="/ecoservices/public/img/compostage.jpg" alt="Compostage">
                 <figcaption>Compostage des déchets organiques</figcaption>
             </figure>
             <figure>
-                <img src="img/recyclage.jpg" alt="Recyclage">
+                <img src="/ecoservices/public/img/recyclage.jpg" alt="Recyclage">
                 <figcaption>Recyclage des matériaux</figcaption>
             </figure>
             <figure>
-                <img src="img/nature.jpg" alt="Nature et Environnement">
+                <img src="/ecoservices/public/img/nature.jpg" alt="Nature et Environnement">
                 <figcaption>Protection de l'environnement</figcaption>
             </figure>
             <figure>
-                <img src="img/ecologie.jpg" alt="Écologie Urbaine">
+                <img src="/ecoservices/public/img/ecologie.jpg" alt="Écologie Urbaine">
                 <figcaption>Écologie urbaine et jardins partagés</figcaption>
             </figure>
             <figure>
-                <img src="img/vie-durable.jpg" alt="Vie Quotidienne Durable">
+                <img src="/ecoservices/public/img/vie-durable.jpg" alt="Vie Quotidienne Durable">
                 <figcaption>Vie quotidienne durable</figcaption>
             </figure>
         </div>
@@ -169,7 +169,7 @@
            Recyclage écologique des équipements pour une gestion responsable des déchets
            </p>
 
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+           <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
         </div>
 
 
@@ -188,7 +188,7 @@
             Audit et conseil pour optimiser la gestion des déchets en entreprise.
           </p>
 
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+          <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
         </div>
 
 
@@ -207,7 +207,7 @@
             Fourniture de certificats de destruction pour garantir la conformité aux réglementations.
           </p>
 
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+          <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
         </div>
 
         
@@ -225,8 +225,7 @@
           <p>
             Reconditionnement et réutilisation des équipements fonctionnels.
           </p>
-
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+          <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
         </div>
 
 
@@ -246,7 +245,7 @@
             Séminaires sur les avantages économiques et environnementaux de la gestion durable des déchets.
           </p>
 
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+          <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
         </div>
 
         
@@ -265,7 +264,8 @@
             Formation et suivi pour une gestion efficace du compostage.
           </p>
 
-          <a href="#" class="btn btn1 btn11"><span>Demander devis</span></a>
+          <a href="/ecoservices/app/views/demande.php" class="btn btn1 btn11"><span>Demander devis</span></a>
+
         </div>
 
 
@@ -302,5 +302,6 @@
     </section>
 
     <script src="/ecoservices/public/js/script.js"></script>
+    <script src="/ecoservices/public/js/mots.js"></script>
   </body>
 </html>

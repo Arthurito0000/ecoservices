@@ -61,9 +61,9 @@ if ($productId) {
     
          <option value="Produits pour la Maison" <?php echo ($product->category == 'Produits pour la Maison') ? 'selected' : ''; ?>>Produits pour la Maison</option>
          <option value="Produits pour le Quotidien" <?php echo ($product->category == 'Produits pour le Quotidien') ? 'selected' : ''; ?>>Produits pour le Quotidien</option>
-         <option value="Produits pour les Bébés et Enfants" <?php echo ($product->category == 'Produits pour les Bébés et Enfants') ? 'selected' : ''; ?>>Produits pour les Bébés et Enfants</option>
+         <option value="Produits pour les Bebes et Enfants" <?php echo ($product->category == 'Produits pour les Bebes et Enfants') ? 'selected' : ''; ?>>Produits pour les Bebes et Enfants</option>
          <option value="Produits pour les Animaux" <?php echo ($product->category == 'Produits pour les Animaux') ? 'selected' : ''; ?>>Produits pour les Animaux</option>
-         <option value="Emballages Réutilisables" <?php echo ($product->category == 'Emballages Réutilisables') ? 'selected' : ''; ?>>Emballages Réutilisables</option>
+         <option value="Emballages Reutilisables" <?php echo ($product->category == 'Emballages Reutilisables') ? 'selected' : ''; ?>>Emballages Reutilisables</option>
     </select>
 
     <label for="etat">Etat:</label>
